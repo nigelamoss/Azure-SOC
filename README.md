@@ -32,25 +32,27 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+NSG Allowed Inbound Malicious Flows ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/280bb627-2222-4bdd-85bc-5257b43026cd)<br>
+Linux Syslog Auth Failures ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/5aeb3ba4-302b-4223-a04f-a6d1a59b9f0d)<br>
+Windows RDP/SMB Auth Failures ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/76d709e5-9410-4068-b470-78ee1fd6b38b)
+<br>
+MSSQL-Auth-Fail ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/92972fdf-5d39-4955-ae24-13294b2ddd39)
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2023-08-29 14:40:42
+Stop Time 2023-08-30 14:40:42
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 574147
+| Syslog                   | 1463
+| SecurityAlert            | 6
+| SecurityIncident         | 207
+| AzureNetworkAnalytics_CL | 2599
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps After Hardening / Security Controls
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
 
