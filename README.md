@@ -63,24 +63,22 @@ Stop Time 2023-08-30 14:40:42
 
 ## Attack Maps After Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```All map queries returned no results due to zero instances of malicious activity for the 24 hour period after hardening.```
 
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2023-08-30 13:30
+Stop Time	2023-08-31 13:30
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
+| SecurityEvent            | _
+| Syslog                   | _
+| SecurityAlert            | _
+| SecurityIncident         | _
+| AzureNetworkAnalytics_CL | _
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
-
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+In the context of this project, we established a compact honeynet infrastructure within the Microsoft Azure environment. This honeynet served as a controlled simulation space to detect and analyze potential cybersecurity threats. We aggregated logs from various sources, channeling them into a designated Log Analytics workspace. Employing Microsoft Sentinel, we harnessed these logs to proactively identify anomalous activities, triggering alerts and facilitating the orchestration of incident responses. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
