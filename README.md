@@ -1,5 +1,5 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/1ece8640-13c8-4201-9123-80b33c4e3484)
+![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/e20b1b20-4d5a-485f-b381-998d24d392fd)
 
 
 ## Introduction
@@ -15,11 +15,13 @@ To evaluate the effectiveness of our security measures, I've conducted a compara
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/9c3fb2f0-7c4a-4730-8310-e12cbbb5bca6)
+![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/86f20326-5bd7-4c88-a32b-68b0c56ca7fd)
+
 
 
 ## Architecture After Hardening / Security Controls
-![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/7ce342a5-6b08-467a-923e-3d49dcbfd860)
+![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/0b1a1285-d805-4a58-abf3-fd3fa3b1ae51)
+
 
 
 The architecture of the mini honeynet in Azure consists of the following components:
@@ -37,11 +39,13 @@ The architecture of the mini honeynet in Azure consists of the following compone
 "AFTER" metrics: Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-NSG Allowed Inbound Malicious Flows ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/280bb627-2222-4bdd-85bc-5257b43026cd)<br>
-Linux Syslog Auth Failures ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/5aeb3ba4-302b-4223-a04f-a6d1a59b9f0d)<br>
-Windows RDP/SMB Auth Failures ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/76d709e5-9410-4068-b470-78ee1fd6b38b)
+NSG Allowed Inbound Malicious Flows ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/9e674b92-973e-4726-8736-28d93a7ef94d)<br>
+Linux Syslog Auth Failures ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/b42570c6-7ce6-495d-8b2f-925b27b37d76)
 <br>
-MSSQL-Auth-Fail ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/92972fdf-5d39-4955-ae24-13294b2ddd39)
+Windows RDP/SMB Auth Failures ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/1ddab3c7-7d20-4a22-b44b-2a03183e42f7)<br>
+
+MSSQL-Auth-Fail ![image](https://github.com/nigelamoss/Azure-SOC/assets/91230399/a4da887f-e95a-4708-899e-745b5e2aee0d)
+
 
 ## Metrics Before Hardening / Security Controls
 
